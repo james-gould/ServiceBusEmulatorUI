@@ -1,0 +1,55 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:vm="using:SBEManagementSuite.UI.ViewModels"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:con="using:SBEManagementSuite.UI.Converters"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:DataType="vm:DockerContainersStatusViewModel"
+        x:Class="SBEManagementSuite.UI.Views.DockerContainers">
+
+    <Grid Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="10*"/>
+			<RowDefinition Height="90*"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel Grid.Row="0" Background="LightGoldenrodYellow">
+			<TextBlock>
+				<Run Text="Service Bus Emulator: "/>
+				<Run Text="{ Binding ServiceBusRunning }" />
+			</TextBlock>
+			
+			<TextBlock>
+				<Run Text="SqlEdge Database: "/>
+				<Run Text="{ Binding SqlEdgeRunning }"/>
+			</TextBlock>
+		</StackPanel>
+		
+		<StackPanel Grid.Row="1">
+			<Grid Name="ContainerDetails">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<StackPanel Grid.Column="0">
+					<TextBlock Margin="10" Text="Types" FontWeight="Bold" Background="Red"/>
+					<TextBlock Margin="10" Text="{Binding Types, Mode=OneWay}"/>
+				</StackPanel>
+				<StackPanel Grid.Column="1">
+					<TextBlock Margin="10" Text="Container Names" FontWeight="Bold" Background="LightBlue"/>
+					<TextBlock Margin="10" Text="{Binding ContainerNames, Mode=TwoWay}"/>
+				</StackPanel>
+				<StackPanel Grid.Column="2">
+					<TextBlock Margin="10" Text="Docker Action" FontWeight="Bold" Background="LightGreen"/>
+					<TextBlock Margin="10" Text="{Binding ContainerAction, Mode=TwoWay}"/>
+				</StackPanel>
+			</Grid>
+		</StackPanel>
+    </Grid>
+    
+</UserControl>

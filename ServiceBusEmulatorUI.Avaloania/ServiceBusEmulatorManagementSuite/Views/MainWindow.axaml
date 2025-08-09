@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:vm="using:SBEManagementSuite.UI.ViewModels"
+        xmlns:views="using:SBEManagementSuite.UI.Views"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+        x:Class="SBEManagementSuite.UI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="ServiceBusEmulatorManagementSuite" Height="768" Width="1024"
+        CanResize="False">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>    <!-- Main Content -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>   <!-- Main Content Area -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Main Content Area -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Background="White">
+            <TextBlock Text="Main Content Area" VerticalAlignment="Center" Margin="10"/>
+            <!-- Add more main content elements here -->
+
+			<views:DockerContainers/>
+        </StackPanel>
+    </Grid>
+</Window>
