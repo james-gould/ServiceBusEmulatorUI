@@ -1,4 +1,4 @@
-# ServiceBusEmulatorUI
+# Azure Service Bus Emulator UI
 
 > [!NOTE]
 > This project is a Work In Progress and should not be relied upon until the initial release.
