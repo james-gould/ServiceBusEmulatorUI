@@ -12,12 +12,16 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.4.0" />
+    <PackageReference Include="Aspire.Hosting.Azure.Functions" Version="9.4.0-preview.1.25378.8" />
     <PackageReference Include="Aspire.Hosting.Azure.ServiceBus" Version="9.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ServiceBusEmulatorUI.Shared\ServiceBusEmulatorUI.Shared.csproj" IsAspireProjectResource="false" />
-    <ProjectReference Include="..\ServiceBusEmulatorUI.QueueWorker\ServiceBusEmulatorUI.QueueWorker.csproj" />
+    <ProjectReference
+      Include="..\..\src\AzureServiceBusEmulatorUI.Shared\AzureServiceBusEmulatorUI.Shared.csproj"
+      IsAspireProjectResource="false" />
+    <ProjectReference
+      Include="..\AzureServiceBusEmulatorUI.QueueWorker\AzureServiceBusEmulatorUI.QueueWorker.csproj" />
   </ItemGroup>
 
 </Project>

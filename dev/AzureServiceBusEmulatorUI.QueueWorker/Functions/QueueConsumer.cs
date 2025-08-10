@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using ServiceBusEmulatorUI.Shared.Constants;
 using ServiceBusEmulatorUI.Shared.Utilities;
 
-namespace ServiceBusEmulatorUI.QueueWorker.Functions;
+namespace AzureServiceBusEmulatorUI.QueueWorker.Functions;
 
 public class QueueConsumer(ILogger<QueueConsumer> logger)
 {

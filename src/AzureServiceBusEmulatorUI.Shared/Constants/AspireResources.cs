@@ -1,8 +1,10 @@
-﻿namespace ServiceBusEmulatorUI.Shared.Constants;
+﻿namespace AzureServiceBusEmulatorUI.Shared.Constants;
 
 public sealed class AspireResources
 {
-    public const string ServiceBus = "debugBus";
+    public const string ServiceBus = "debug-bus-service";
+
+    public const string QueueWorker = "queue-worker";
 
     public sealed class Queues
     {

@@ -1,4 +1,4 @@
-﻿namespace ServiceBusEmulatorUI.Shared.Utilities;
+﻿namespace AzureServiceBusEmulatorUI.Shared.Utilities;
 
 public static class EnvUtils
 {

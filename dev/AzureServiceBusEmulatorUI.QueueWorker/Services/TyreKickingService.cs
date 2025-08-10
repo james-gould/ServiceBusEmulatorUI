@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ServiceBusEmulatorUI.Shared.Constants;
 
-namespace ServiceBusEmulatorUI.QueueWorker.Services;
+namespace AzureServiceBusEmulatorUI.QueueWorker.Services;
 
 public class TyreKickingService(
     ILogger<TyreKickingService> logger,
