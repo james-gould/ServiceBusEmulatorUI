@@ -1,5 +1,5 @@
 ﻿using Aspire.Hosting.Azure;
-using ServiceBusEmulatorUI.Shared.Constants;
+using AzureServiceBusEmulatorUI.Shared.Constants;
 
 namespace AzureServiceBusEmulatorUI.AppHost.Resources;
 

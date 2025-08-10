@@ -3,9 +3,9 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ServiceBusEmulatorUI.QueueWorker.Services;
-using ServiceBusEmulatorUI.Shared.Constants;
-using ServiceBusEmulatorUI.Shared.Utilities;
+using AzureServiceBusEmulatorUI.QueueWorker.Services;
+using AzureServiceBusEmulatorUI.Shared.Constants;
+using AzureServiceBusEmulatorUI.Shared.Utilities;
 
 var builder = FunctionsApplication.CreateBuilder(args);
 

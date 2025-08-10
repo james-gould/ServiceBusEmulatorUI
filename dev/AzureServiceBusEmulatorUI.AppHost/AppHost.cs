@@ -1,12 +1,12 @@
-using ServiceBusEmulatorUI.AppHost.Resources;
-using ServiceBusEmulatorUI.Shared.Constants;
+using AzureServiceBusEmulatorUI.AppHost.Resources;
+using AzureServiceBusEmulatorUI.Shared.Constants;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
 var bus = builder.AddServiceBusWithQueues();
 
 var func = builder
-    .AddAzureFunctionsProject<Projects.ServiceBusEmulatorUI_QueueWorker>(AspireResources.QueueWorker)
+    .AddAzureFunctionsProject<Projects.AzureServiceBusEmulatorUI_QueueWorker>(AspireResources.QueueWorker)
     .WithEnvironment(AspireResources.ServiceBus, bus)
     .WithEnvironment("AzureWebJobsServiceBus", bus);
 

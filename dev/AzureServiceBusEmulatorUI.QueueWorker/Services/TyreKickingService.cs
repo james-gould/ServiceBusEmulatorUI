@@ -1,7 +1,7 @@
 ﻿using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ServiceBusEmulatorUI.Shared.Constants;
+using AzureServiceBusEmulatorUI.Shared.Constants;
 
 namespace AzureServiceBusEmulatorUI.QueueWorker.Services;
 

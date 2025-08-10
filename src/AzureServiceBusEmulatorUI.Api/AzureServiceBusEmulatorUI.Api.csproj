@@ -12,8 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\src\AzureServiceBusEmulatorUI.Shared\AzureServiceBusEmulatorUI.Shared.csproj" />
+    <ProjectReference Include="..\AzureServiceBusEmulatorUI.Shared\AzureServiceBusEmulatorUI.Shared.csproj" />
   </ItemGroup>
 
 </Project>

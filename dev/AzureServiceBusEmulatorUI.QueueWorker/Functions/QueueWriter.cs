@@ -2,8 +2,8 @@ using Azure.Messaging.ServiceBus;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ServiceBusEmulatorUI.Shared.Constants;
-using ServiceBusEmulatorUI.Shared.Utilities;
+using AzureServiceBusEmulatorUI.Shared.Constants;
+using AzureServiceBusEmulatorUI.Shared.Utilities;
 
 namespace AzureServiceBusEmulatorUI.QueueWorker.Functions;
 
