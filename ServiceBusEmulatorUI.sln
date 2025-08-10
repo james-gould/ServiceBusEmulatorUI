@@ -4,15 +4,15 @@ VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{E8570C50-7509-4F6F-988B-0DB3F7BA9EF2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3EE336A1-4987-424D-B1BB-A0E3DB4C0700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusEmulatorUI.Shared", "src\ServiceBusEmulatorUI.Shared\ServiceBusEmulatorUI.Shared.csproj", "{DEB46469-D952-18F0-D8DA-717B07E5D9D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusEmulatorUI.AppHost", "dev\ServiceBusEmulatorUI.AppHost\ServiceBusEmulatorUI.AppHost.csproj", "{272ED09B-4438-4862-A9F9-DD097A804D93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusEmulatorUI.QueueWorker", "dev\ServiceBusEmulatorUI.QueueWorker\ServiceBusEmulatorUI.QueueWorker.csproj", "{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusEmulatorUI.Shared", "src\ServiceBusEmulatorUI.Shared\ServiceBusEmulatorUI.Shared.csproj", "{DEB46469-D952-18F0-D8DA-717B07E5D9D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3EE336A1-4987-424D-B1BB-A0E3DB4C0700}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{FF40B226-E711-4399-ADED-608D711C8529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,14 +20,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{272ED09B-4438-4862-A9F9-DD097A804D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{272ED09B-4438-4862-A9F9-DD097A804D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{272ED09B-4438-4862-A9F9-DD097A804D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{272ED09B-4438-4862-A9F9-DD097A804D93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DEB46469-D952-18F0-D8DA-717B07E5D9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DEB46469-D952-18F0-D8DA-717B07E5D9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB46469-D952-18F0-D8DA-717B07E5D9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEB46469-D952-18F0-D8DA-717B07E5D9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272ED09B-4438-4862-A9F9-DD097A804D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272ED09B-4438-4862-A9F9-DD097A804D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272ED09B-4438-4862-A9F9-DD097A804D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272ED09B-4438-4862-A9F9-DD097A804D93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,9 +37,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{272ED09B-4438-4862-A9F9-DD097A804D93} = {E8570C50-7509-4F6F-988B-0DB3F7BA9EF2}
 		{DEB46469-D952-18F0-D8DA-717B07E5D9D5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB} = {E8570C50-7509-4F6F-988B-0DB3F7BA9EF2}
+		{272ED09B-4438-4862-A9F9-DD097A804D93} = {FF40B226-E711-4399-ADED-608D711C8529}
+		{9A3142F0-75FB-4BB8-9497-8F9FA0DB8BEB} = {FF40B226-E711-4399-ADED-608D711C8529}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53CDA807-02C2-4CFC-8159-92E8C3422A7A}

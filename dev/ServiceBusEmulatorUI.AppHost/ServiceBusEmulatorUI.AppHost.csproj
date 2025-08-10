@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
 
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ServiceBusEmulatorUI.QueueWorker\ServiceBusEmulatorUI.QueueWorker.csproj" />
     <ProjectReference Include="..\..\src\ServiceBusEmulatorUI.Shared\ServiceBusEmulatorUI.Shared.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\ServiceBusEmulatorUI.QueueWorker\ServiceBusEmulatorUI.QueueWorker.csproj" />
   </ItemGroup>
 
 </Project>
