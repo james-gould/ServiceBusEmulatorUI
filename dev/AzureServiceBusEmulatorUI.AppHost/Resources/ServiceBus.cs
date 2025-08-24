@@ -9,7 +9,7 @@ internal static class ServiceBus
     {
         var bus = builder
             .AddAzureServiceBus(AspireResources.ServiceBus)
-            .RunAsEmulator();
+            .RunAsEmulator(opt => opt.WithLifetime(ContainerLifetime.Persistent));
 
         bus.AddServiceBusQueue(AspireResources.Queues.DebugQueue);
         bus.AddServiceBusQueue(AspireResources.Queues.TyreKicker);

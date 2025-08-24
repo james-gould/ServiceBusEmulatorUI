@@ -19,7 +19,7 @@ builder.Services
 
 var busConnectionString = EnvUtils.GetEnvVar(AspireResources.ServiceBus);
 
-builder.Services.AddSingleton(() => new ServiceBusClient(busConnectionString));
+builder.Services.AddSingleton(new ServiceBusClient(busConnectionString));
 builder.Services.AddHostedService<TyreKickingService>();
 
 builder.Build().Run();

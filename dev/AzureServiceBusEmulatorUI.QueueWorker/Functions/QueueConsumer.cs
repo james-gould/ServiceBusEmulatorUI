@@ -17,8 +17,8 @@ public class QueueConsumer(ILogger<QueueConsumer> logger)
         logger.LogInformation("Message Body: {body}", message.Body);
 
         if (RandomUtils.FlexibleFlag())
-            throw new InvalidOperationException($"Force threw to generate DLQ message");
-
-        await messageActions.CompleteMessageAsync(message);
+            await messageActions.AbandonMessageAsync(message);
+        else
+            await messageActions.CompleteMessageAsync(message);
     }
 }
